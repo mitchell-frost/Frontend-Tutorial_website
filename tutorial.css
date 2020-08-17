@@ -39,9 +39,17 @@
     padding-right: 50px;
   }
 
+a {
+  border: 3px;
+  border-radius: 4px;
+  border-style: solid white;
+}
+
 a:link {
   color: white;
   text-shadow: 1px white;
+  text-decoration: blink;
+  
 }
 
 /* visited link */
@@ -65,7 +73,7 @@ ul {
 }
 
 .footer {
-  background: rgba(138, 43, 226, 0.5); 
+  background: rgba(138, 43, 226, 0.45); 
   position: fixed;
   left: 0;
   bottom: 0;
