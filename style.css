@@ -71,6 +71,19 @@
   .sidebar a {font-size: 18px;}
 } 
 
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.linen {
+  background-color: linen;
+}
+
 
 .main-content {
   padding-left: 120px;
