@@ -14,10 +14,12 @@
 }
 
 .tutweb {
-  padding-top: 70px;
+  padding-top: 58px;
   opacity: 1;
   font-size: 3.3em;
   font-family: monospace;
+  align-items: center;
+  padding-left: 60px;
 }
 
 .tut {
@@ -81,4 +83,18 @@ ul {
   color: white;
   text-align: center;
   height: 43px;
+}
+
+.Frontend {
+  text-align: center;
+  align-items: center;
+}
+
+#logo1 {
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    padding-left: 30px;
+    padding-top: 18px;
+    opacity: 0.85;
 }

@@ -110,3 +110,8 @@ table, td, th {
     position: relative;
     margin: 10px 15px 15px 10px;
 }
+
+.Frontend {
+  text-align: center;
+  align-items: center;
+}
