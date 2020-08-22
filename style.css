@@ -71,14 +71,19 @@
   .sidebar a {font-size: 18px;}
 } 
 
-.main {
-  padding-left: 200px;
-}
 
 .main-content {
   padding-left: 120px;
   padding-right: 250px;
   font-family: sans-serif;
+}
+
+#logo {
+  float: right;
+}
+
+.big-big {
+  font-size: 100px;
 }
 
 .defn {
