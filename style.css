@@ -89,6 +89,7 @@ table, td, th {
   padding-left: 120px;
   padding-right: 250px;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 #logo {
@@ -102,4 +103,10 @@ table, td, th {
 .defn {
   font-size: 25px;
   font-family: sans-serif;
+}
+
+#logo1 {
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
 }
