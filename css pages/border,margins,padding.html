@@ -1,0 +1,113 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internal and External CSS</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Inline Styles</a>
+	  <a href="#">Internal and External Style Sheet</a>
+	  <a href="#">Selectors</a>
+	  <a href="#">Background Properties</a>
+	  <a href="#">Borders, Margins and Padding</a>
+	  <a href="#">Fonts, Links and Icons</a>
+	  <a href="#">Lists and Tables</a>
+	  <a href="#">Text Properties</a>
+	  <a href="#">Layouts</a>
+	</div>
+
+	<div id = "main">
+			<button class="openbtn" onclick="openNav()">&#9776; CSS Topics</button>
+			<img id="logo" src="../logo.png" height="95" width="95">
+			<div class = "main-content">
+		  	<h1>Borders,Margins and Padding</h1> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+<h1>Borders</h1>
+ <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+        <p class="defn>The CSS border properties allow you to specify the style, width, and color of an element's border."
+<h1>Border styles:</h1> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+			  <p class="defn">dotted - Defines a dotted border
+<p class="defn">dashed - Defines a dashed border
+<p class="defn">solid - Defines a solid border
+<p class="defn">double - Defines a double border
+<p class="defn">groove - Defines a 3D grooved border. The effect depends on the border-color value
+<p class="defn">ridge - Defines a 3D ridged border. The effect depends on the border-color value
+<p class="defn">inset - Defines a 3D inset border. The effect depends on the border-color value
+<p class="defn">outset - Defines a 3D outset border. The effect depends on the border-color value
+<p class="defn">none - Defines no border
+hidden - Defines a hidden border
+
+	          </p><br>
+<iframe src="https://codepen.io/samyuktajena123/embed/NWNdPxo" width="80%" height="370px"></iframe>
+  <!--Two <br> after a topic ending like here and the beginning of something else-->
+				<br><br>
+<h1>Margins</h1>
+  <p class="defn">CSS has properties for specifying the margin for each side of an element:
+  <p class="defn"> margin-top
+  <p class="defn">  margin-right
+  <p class="defn"> margin-bottom
+  <p class="defn">  margin-left
+<p class="defn">All the margin properties can have the following values:
+   <p class="defn">auto - the browser calculates the margin
+ <p class="defn">length - specifies a margin in px, pt, cm, etc.
+ <p class="defn">% - specifies a margin in % of the width of the containing element
+ <p class="defn">inherit - specifies that the margin should be inherited from the parent element
+<h1>The auto Value</h1> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+  <p class="defn">You can set the margin property to auto to horizontally center the element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+    <iframe src="https://codepen.io/samyuktajena123/embed/abNpzpp" width="80%" height="370px"></iframe>
+    <h1>The inherit Value</h1>
+			  
+			  <p class="defn">This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>):</p><br>
+				<iframe src="https://codepen.io/samyuktajena123/embed/OJNWPvq" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+				<br><br>
+<h1>Padding</h1>
+			  
+			  <p class="defn">The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+<p class="defn">CSS has properties for specifying the padding for each side of an element:
+
+<p class="defn"> padding-top
+<p class="defn">padding-right
+<p class="defn">padding-bottom
+<p class="defn">padding-left
+ <p class="defn"> All the padding properties can have the following values:
+
+<p class="defn">length - specifies a padding in px, pt, cm, etc.
+<p class="defn">% - specifies a padding in % of the width of the containing element
+<p class="defn">inherit - specifies that the padding should be inherited from the parent element
+</p><br>
+				<iframe src="https://codepen.io/samyuktajena123/embed/ZEWLYjp" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+				<br><br>
+	</div>
+
+	<script type="text/javascript">
+		/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft = "0";
+		} 
+	</script>
+</body>
+</html>
