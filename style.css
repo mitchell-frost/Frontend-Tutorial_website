@@ -88,7 +88,7 @@ table, td, th {
 
 .main-content {
   padding-left: 120px;
-  padding-right: 250px;
+  padding-right: 150px;
   font-family: sans-serif;
   flex: 1 0 auto;
 }
@@ -111,4 +111,25 @@ footer {
   background-color: rgba(0, 0, 0, 0.35);
   width: 100%;
   border-radius: 10px;
+}
+
+.likeabutton {
+    text-decoration: none; font: menu;
+    display: inline-block; padding: 10px 35px;
+    font-size: 20px;
+    border-radius: 1pc;
+    font-family: monospace;
+    background: #000; color: white;
+    border-style: solid; border-width: 2px;
+}
+.likeabutton:active {
+    border-color: blueviolet;
+}
+.likeabutton:hover {
+  background-color: blueviolet;
+}
+
+.home-btn {
+  text-align: center;
+  align-items: center;
 }
