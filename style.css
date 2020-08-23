@@ -1,5 +1,6 @@
  body {
   background-color: wheat;
+  margin: 0;
  }
 
  /* The sidebar menu */
@@ -89,6 +90,7 @@ table, td, th {
   padding-left: 120px;
   padding-right: 250px;
   font-family: sans-serif;
+  flex: 1 0 auto;
 }
 
 #logo {
@@ -100,15 +102,13 @@ table, td, th {
 }
 
 .defn {
-  font-size: 21.5px;
+  font-size: 21px;
   font-family: sans-serif;
 }
 
 footer {
   text-align: center;
-  color: black;
-  width: 1510px;
-  margin-left: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  border-radius: 10px;
 }
