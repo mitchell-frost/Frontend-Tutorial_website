@@ -1,0 +1,104 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internal and External CSS</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="../html pages/intro.html">Introduction to HTML</a>
+	  <a href="../html pages/htmlcomments.html">HTML Comments</a>
+	  <a href="../html pages/heading.html">Heading tags</a>
+	  <a href="../html pages/paragraph.html">Paragraph</a>
+	  <a href="../html pages/anchortag.html">Anchor</a>
+	  <a href="../html pages/imageandvideo.html">Image and Video</a>
+	  <a href="../html pages/linebreak.html">Line Breaks</a>
+	  <a href="../html pages/text_formatting.html">Text Formatting</a>
+	  <a href="../html pages/lists.html">Lists</a>
+	  <a href="../html pages/frames_iframes.html">Frames</a>
+	  <a href="../html pages/forms.html">Forms</a>
+	</div>
+
+	<div id = "main">
+			<button class="openbtn" onclick="openNav()">&#9776; HTML Topics</button>
+			<img id="logo" src="../logo.png" height="95" width="95">
+			<div class = "main-content">
+		  	<h1>Frames and Iframes</h1> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+<h2>Frames</h2>
+			  <p class="defn">HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.
+	          </p><br>
+<h2>Disadvantages of Frames</h2>
+<p class="defn">There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −
+
+<p class="defn">1.Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.
+
+<p class="defn">2.Sometimes your page will be displayed differently on different computers due to different screen resolution.
+
+<p class="defn">3.The browser's back button might not work as the user hopes.
+
+<p class="defn">3.There are still few browsers that do not support frame technology.
+</p><br>
+<h3>Note:</h3>
+<p class="defn">HTML &ltframe&gt tag is not supported in HTML5.Instead &ltiframe&gt tag is used.
+  </p><br>
+<h2> HTML Iframes</h2> 
+<p class="defn">An HTML iframe is used to display a web page within a web page.</p><br>
+<h3> HTML Iframe Syntax </h3>
+<p class="defn">The HTML &ltiframe&gt tag specifies an inline frame.
+
+  An inline frame is used to embed another document within the current HTML document.</p><br>
+<h4> Syntax:</h4>
+<p class="defn">&ltiframe src="url" title="description"&gt
+</p><br>
+<h3>Iframe - Set Height and Width</h3>
+<p class="defn">Use the height and width attributes to specify the size of the iframe.</p><br>
+<h4> Example:</h4>
+<p class="defn">&ltiframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt&lt/iframe&gt
+</p><br>
+<h3>Iframe - Remove the Border</h3>
+<p class="defn">By default, an iframe has a border around it.
+
+<p class="defn">To remove the border, add the style attribute and use the CSS border property
+</p><br>
+<h4>Example:</h4>
+<p class="defn">&ltiframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt&lt/iframe&gt
+</p><br>
+<h3>Iframe - Target for a Link</h3>
+<p class="defn">An iframe can be used as the target frame for a link.
+
+<p class="defn">The target attribute of the link must refer to the name attribute of the iframe.
+</p><br>
+<h4>Example:</h4>
+<p class="defn">&ltiframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt&lt/iframe&gt
+<p class="defn">&ltp&gt&lta href="https://www.w3schools.com" target="iframe_a"&gtW3Schools.com&lt/a&gt&lt/p&gt
+</p><br>
+				<br><br><br>
+				<div class="home-btn">
+			  	<a href="../home.html" class="likeabutton" role="button" aria-pressed="true">Home</a>
+			  </div> 
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft = "0";
+		} 
+	</script>
+</body>
+</html>

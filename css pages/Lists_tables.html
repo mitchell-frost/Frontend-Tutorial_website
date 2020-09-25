@@ -1,0 +1,124 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internal and External CSS</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="../css pages/inline_styles.html">Inline Styles</a>
+	  <a href="../css pages/internal_ext_style.html">Internal and External Style Sheet</a>
+	  <a href="../css pages/selectors.html">Selectors</a>
+	  <a href="../css pages/background.html">Background Properties</a>
+	  <a href="../css pages/border,margins,padding.html">Borders, Margins and Padding</a>
+	  <a href="../css pages/iconsfonts.html">Fonts, Links and Icons</a>
+	  <a href="../css pages/Lists_tables.html">Lists and Tables</a>
+	  <a href="../css pages/textprop.html">Text Properties</a>
+	  <a href="../css pages/csslayouts.html">Layouts</a>
+
+	</div>
+
+	<div id = "main">
+			<button class="openbtn" onclick="openNav()">&#9776; CSS Topics</button>
+			<img id="logo" src="../logo.png" height="95" width="95">
+			<div class = "main-content">
+		  	<h1>Lists and Tables</h1> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+<h2>Lists</h2>
+<p class="defn">Lists are very helpful in conveying a set of either numbered or bullet points. This chapter teaches you how to control list type, position, style, etc., using CSS.
+</p><br>
+<h3>We have the following five CSS properties, which can be used to control lists −</h3>
+			  <p class="defn">1.The list-style-type allows you to control the shape or appearance of the marker.
+<p class="defn">2.The list-style-position specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker.
+
+<p class="defn">3.The list-style-image specifies an image for the marker rather than a bullet point or number.
+
+<p class="defn">4.The list-style serves as shorthand for the preceding properties.
+
+<p class="defn">5.The marker-offset specifies the distance between a marker and the text in the list.
+
+	          </p><br>
+			  <h3>The list-style-type Property</h3>
+			  
+			  <p class="defn">The list-style-type property allows you to control the shape or style of bullet point (also known as a marker) in the case of unordered lists and the style of numbering characters in ordered lists.</p><br>
+<h4>Here is an example-</h4>
+				<iframe src="https://codepen.io/samyuktajena123/embed/VwaPavV" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+				<br><br>
+<h3>The list-style-position Property</h3> <!--Heading should either be in <h1> or <h2> Use your own discretion-->
+		  	<!--defn class adds the size and required effects to a paragraph-->
+			  <p class="defn">The list-style-position property indicates whether the marker should appear inside or outside of the box containing the bullet points.
+	          </p><br>
+<h4>Here is an example-</h4>
+ <iframe src="https://codepen.io/samyuktajena123/embed/BaKpKKy" width="80%" height="370px"></iframe>
+			  <!--Make sure you add a break after every para and two br after an iframe-->
+			  <!--If yo have code in <p> for eg '<' change with &lt and &gt for '>'-->			  
+			  <!--While copying the URL, change the '/pen/' in it to '/embed/'-->
+			  <!--Make sure you make a new pen every time in codepen or the same code will reflext everywhere-->
+			  <!--In codepen, right click on the top right corner, human symbol, click on 'New Pen'. After making changes, save it and then copy the URL-->
+			  <br><br><br>
+			  <!--To make changes to the text you Ctrl C+V, first copy it to Notepad, go to 'Edit' and then click on Replace. Write '<' and '&lt' in to be replaced with. Keep clicking the 'Replace' button till all of it is replaced-->
+<h3>The list-style-image Property</h3>
+<p class="defn">The list-style-image allows you to specify an image so that you can use your own bullet style. The syntax is similar to the background-image property with the letters url starting the value of the property followed by the URL in brackets. If it does not find the given image then default bullets are used.</p><br>
+<h4>Here is an example-</h4>
+<iframe src="https://codepen.io/samyuktajena123/embed/bGpgpeV"width="80%" height="370px"></iframe>
+<h3>List style property</h3>
+<p class="defn">The list-style allows you to specify all the list properties into a single expression. These properties can appear in any order.</p><br>
+<h4>Here is an example-</h4>
+<iframe src="https://codepen.io/samyuktajena123/embed/MWyJyjm"width="80%" height="370px"></iframe>
+<h3>The marker-offset Property</h3>
+<p class="defn">The marker-offset property allows you to specify the distance between the marker and the text relating to that marker. Its value should be a length as shown in the following example −
+
+  Unfortunately, this property is not supported in IE 6 or Netscape 7.</p><br>
+<h4>Here is an example-</h4>
+<iframe src="https://codepen.io/samyuktajena123/embed/abNpNBG"width="80%" height="370px"></iframe>
+  
+			  <h1>Tables</h1>
+			  
+			  <p class="defn">The look of an HTML table can be greatly improved with CSS.</p><br>
+				<h1>Table borders</h1>
+			  
+			  
+				<iframe src="https://codepen.io/samyuktajena123/embed/eYZgYpQ" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+          <h1>Table width and height</h1>
+			  
+			  <p class="defn">Width and height of a table are defined by the width and height properties.
+
+The example below sets the width of the table to 100%, and the height of the <th> elements to 50px:</p><br>
+				<iframe src="https://codepen.io/samyuktajena123/embed/ExKZxyz" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+           <h1>Table padding </h1>
+			  
+			  <p class="defn">To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:</p><br>
+				<iframe src="https://codepen.io/samyuktajena123/embed/vYGgYgX" width="80%" height="370px"></iframe>
+				<!--Two <br> after a topic ending like here and the beginning of something else-->
+				<br><br><br>
+				<div class="home-btn">
+				  	<a href="../home.html" class="likeabutton" role="button" aria-pressed="true">Home</a>
+				</div>    
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft = "0";
+		} 
+	</script>
+</body>
+</html>

@@ -9,8 +9,17 @@
 			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			  crossorigin="anonymous">
 	</script>
+	<link rel="stylesheet" type="text/css" href="prism/prism.css">
+	<!--<link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
+	<script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
+	<script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>-->
 </head>
 <body>
+	<script>
+		window.Prism = window.Prism || {};
+		window.Prism.manual = true;
+	</script>
+	<script type="text/javascript" src="prism/prism.js"></script>
 	<div id="mySidebar" class="sidebar">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  <a href="#">Introduction to HTML</a>
@@ -23,7 +32,6 @@
 	  <a href="#">Anchor</a>
 	  <a href="#">Image and Video</a>
 	  <a href="#">Line Breaks</a>
-	  <a href="#">HTML Tags</a>
 	  <a href="#">Text Formatting</a>
 	  <a href="#">Lists</a>
 	  <a href="#">Frames</a>
@@ -32,6 +40,11 @@
 
 	<div id="main">
 	  <button class="openbtn" onclick="openNav()">&#9776; HTML Topics</button>
+	  <div class="main-content">
+	  	<h1>HTML Lists</h1>
+		  <br><br><br>
+		  <iframe src="https://codepen.io/mitchell-frost/embed/jOqMZZZ?height=600" width="60%" height="350px"></iframe>
+	  </div>  
 	</div>
 
 	<script type="text/javascript">
